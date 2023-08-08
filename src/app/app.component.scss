@@ -1,0 +1,9 @@
+@import '../styles.scss';
+
+:host {
+  @include flex-container;
+  background-color: $color_primary;
+  font-family: 'Inter', 'Arial', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
