@@ -11,23 +11,15 @@
   color: $color_primary;
   margin: 0;
   text-align: center;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: $font_large;
+  font-weight: $weight_semiBold;
 }
 
 .converter__button {
   @include reset;
   @include flex-container;
-  margin-left: 10px;
-  min-width: 32px;
-  min-height: 32px;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
 .mat-icon {
-  min-width: 32px;
-  min-height: 32px;
-  font-size: 30px;
+  @include icon-size($icon_size);
 }
