@@ -5,13 +5,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { DatePipe } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
+    HeaderComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,

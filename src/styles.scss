@@ -4,11 +4,12 @@
 $color_primary: #000;
 $color_secondary: #fff;
 
-$font_large: 30px;
-$font_small: 24px;
+$font_large: 32px;
+$font_small: 18px;
 $icon_size: 34px;
 
 $weight_semiBold: 600;
+$weight_Regular: 400;
 
 @mixin flex-container {
   display: flex;
@@ -26,6 +27,3 @@ $weight_semiBold: 600;
   height: $size;
   width: $size;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

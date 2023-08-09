@@ -1,23 +1,35 @@
 @import '../../styles.scss';
 
-.converter__container {
+:host {
   @include flex-container;
-  padding: 20px;
+  flex-direction: column;
   border-radius: 20px;
   background-color: $color_secondary;
 }
 
-.converter__title {
+.header__title {
+  @include reset;
   color: $color_primary;
-  margin: 0;
   text-align: center;
   font-size: $font_large;
   font-weight: $weight_semiBold;
 }
 
-.converter__button {
+.header__button {
   @include reset;
   @include flex-container;
+}
+
+.header__subtitle {
+  @include reset;
+  font-size: $font_small;
+  font-weight: $weight_Regular;
+  align-self: flex-start;
+}
+
+.header__wrapper {
+  @include flex-container;
+  gap: 20px;
 }
 
 .mat-icon {
