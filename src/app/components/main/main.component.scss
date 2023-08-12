@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@import '../../../styles.scss';
 
 :host {
   @include flex-container;
@@ -7,7 +7,7 @@
   background-color: $color_secondary;
 }
 
-.header__title {
+.main__title {
   @include reset;
   color: $color_primary;
   text-align: center;
@@ -15,19 +15,19 @@
   font-weight: $weight_semiBold;
 }
 
-.header__button {
+.main__addButton {
   @include reset;
   @include flex-container;
 }
 
-.header__subtitle {
+.main__subtitle {
   @include reset;
   font-size: $font_small;
   font-weight: $weight_Regular;
   align-self: flex-start;
 }
 
-.header__wrapper {
+.main__wrapper {
   @include flex-container;
   gap: 20px;
 }

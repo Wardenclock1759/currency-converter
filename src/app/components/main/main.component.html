@@ -1,0 +1,11 @@
+<div class="main__wrapper">
+  <p class="main__title">{{title}}</p>
+  <button mat-icon-button class="main__addButton">
+    <mat-icon>add_circle_outline</mat-icon>
+  </button>
+</div>
+<p class="main__subtitle">{{now | date:'dd.MM.yyyy, HH:mm:ss'}}</p>
+<app-display
+  *ngFor="let code of codes"
+  [currencyCode]="code">
+</app-display>

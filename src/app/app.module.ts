@@ -6,14 +6,14 @@ import { DatePipe } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
-import { ListComponent } from './list/list.component';
+import { MainComponent } from './components/main/main.component';
+import { DisplayComponent } from './components/display/display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ListComponent,
+    MainComponent,
+    DisplayComponent,
   ],
   imports: [
     BrowserModule,
