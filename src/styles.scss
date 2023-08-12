@@ -4,11 +4,14 @@
 $color_primary: #000;
 $color_secondary: #fff;
 
-$font_large: 32px;
-$font_small: 18px;
-$icon_size: 34px;
+$font_large: 28px;
+$font_medium: 22px;
+$font_small: 16px;
+$button_size: 32px;
+$icon_size: 24px;
 
 $weight_semiBold: 600;
+$weight_Medium: 500;
 $weight_Regular: 400;
 
 @mixin flex-container {

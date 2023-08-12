@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Currency } from '../../currency';
+import { Currency } from 'src/app/currency';
 
 @Component({
   selector: 'app-display',
@@ -8,14 +8,9 @@ import { Currency } from '../../currency';
 })
 
 export class DisplayComponent {
-  @Input() currencyCode: string;
+  @Input() currency: Currency;
 
   constructor() {
-    // this.currencyCode = {
-    //   currencyCode: "USD",
-    //   currentValue: 25.3,
-    //   percentageChange: 3,
-    // };
-    this.currencyCode = '';
+    this.currency = new Currency();
   }
 }
