@@ -1,7 +1,10 @@
 <div class="main__wrapper">
   <p class="main__title">{{title}}</p>
-  <button mat-icon-button class="main__addButton">
+  <button *ngIf="!isOpened" mat-icon-button class="main__addButton" (click)="push()">
     <mat-icon>add_circle_outline</mat-icon>
+  </button>
+  <button *ngIf="isOpened" mat-icon-button class="main__addButton" (click)="pop()">
+    <mat-icon>remove_circle_outline</mat-icon>
   </button>
 </div>
 <p class="main__subtitle">{{now | date:'dd.MM.yyyy, HH:mm:ss'}}</p>
