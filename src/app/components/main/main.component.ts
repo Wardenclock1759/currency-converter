@@ -31,7 +31,7 @@ export class MainComponent implements OnInit {
 
   updateCurrency = setInterval(() => {
     this.getCurrency(CURRENCY_CODES.RUB, this.codes);
-  }, 900000);
+  }, 5000);
 
   push() {
     this.codes.push(CURRENCY_CODES.CNY, CURRENCY_CODES.JPY, CURRENCY_CODES.TRY);
